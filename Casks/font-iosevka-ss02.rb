@@ -1,6 +1,6 @@
 cask "font-iosevka-ss02" do
-  version "24.1.3"
-  sha256 "867b75bdbb0af3f10b06900d30d427a258cafaadf4ed65dc3d7e2afdc866bca5"
+  version "26.0.2"
+  sha256 "cfe233b24b298aa583e5704ab690f95abf43def46a01e83032d705692e3a89a8"
 
   url "https://github.com/be5invis/Iosevka/releases/download/v#{version}/ttc-iosevka-ss02-#{version}.zip"
   name "Iosevka SS02"
@@ -21,4 +21,6 @@ cask "font-iosevka-ss02" do
   font "iosevka-ss02-regular.ttc"
   font "iosevka-ss02-semibold.ttc"
   font "iosevka-ss02-thin.ttc"
+
+  # No zap stanza required
 end

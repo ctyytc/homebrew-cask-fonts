@@ -1,6 +1,6 @@
 cask "font-pretendard-std" do
-  version "1.3.6"
-  sha256 "bc7525b7046fa0748bf6573fcaed3c75f9af10d478d46ad014e55b5040d9b7f9"
+  version "1.3.8"
+  sha256 "55441b00d255208e5db5135a5eb9bace00cde2fc29bb44907364afb89964409b"
 
   url "https://github.com/orioncactus/pretendard/releases/download/v#{version}/PretendardStd-#{version}.zip"
   name "Pretendard Std"
@@ -16,4 +16,6 @@ cask "font-pretendard-std" do
   font "public/static/PretendardStd-Regular.otf"
   font "public/static/PretendardStd-SemiBold.otf"
   font "public/static/PretendardStd-Thin.otf"
+
+  # No zap stanza required
 end

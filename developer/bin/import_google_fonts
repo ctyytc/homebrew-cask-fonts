@@ -60,6 +60,8 @@ class FontCask:
 {% for file in files %}
   font "{{file}}"
 {% endfor %}
+
+  # No zap stanza required
 end
 """
     )
@@ -317,6 +319,12 @@ Download the or clone the repository from https://github.com/google/fonts, then 
 
           updated_casks[cask.token()] = cask
         else:
+          try:
+             urllib.request.urlopen(cask.homepage())
+          except urllib.request.URLError as e:
+            if e.code == 404:
+              cask.homepage_override = cask.meta.source.repository_url
+
           added_casks[cask.token()] = cask
 
     changed_casks = {}

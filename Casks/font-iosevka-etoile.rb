@@ -1,6 +1,6 @@
 cask "font-iosevka-etoile" do
-  version "24.1.3"
-  sha256 "7211804ca2edf771ce731e3308e5426027d95087f0ee1e86af47cd975f7e39ad"
+  version "26.0.2"
+  sha256 "f6905950931fb5d25e1c2119b390f1eb2ab2b7f4ae3db1cfa712b6dd4d9c779a"
 
   url "https://github.com/be5invis/Iosevka/releases/download/v#{version}/ttc-iosevka-etoile-#{version}.zip"
   name "Iosevka Etoile"
@@ -21,4 +21,6 @@ cask "font-iosevka-etoile" do
   font "iosevka-etoile-regular.ttc"
   font "iosevka-etoile-semibold.ttc"
   font "iosevka-etoile-thin.ttc"
+
+  # No zap stanza required
 end
